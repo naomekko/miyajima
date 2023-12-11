@@ -1,0 +1,133 @@
+@charset "utf-8";
+
+/* リセット */
+html {
+    font-size: 18px;
+    color: #000;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* 共通CSS */
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+}
+
+/* ヘッダー */
+header {
+    padding: 20px 0;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+/* ファーストビュー */
+.mv {
+    background-image: url(../images/mv-100.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 80px;
+    font-size: 30px;
+}
+
+#about,
+#contents {
+    padding: 100px 0 140px;
+}
+
+#about {
+    background-color: #BDCCD4;
+}
+
+#about p {
+    line-height: 1.8s;
+}
+
+.pic-list {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+footer {
+    background-color: #000;
+    padding: 20px 0;
+}
+
+footer p {
+    text-align: center;
+}
+
+footer small {
+    color: #fff;
+}
+
+/* レスポンシブ */
+@media screen and (max-width:1700px) {
+    .pic-list {
+        padding: 0 3%;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width:820px) {
+    header {
+        padding: 3% 0;
+    }
+
+    .pic-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .wrapper {
+        padding: 0 3%;
+
+    }
+
+    #about,
+    #contents {
+        padding: 12% 0;
+    }
+
+    section h2 {
+        margin-bottom: 5%;
+    }
+
+    footer {
+        padding: 3% 0;
+    }
+}
+
+@media screen and (max-width:540px) {
+    .mv {
+        background-image: url(../images/mv-sp-100.jpg);
+        min-height: 100vh;
+    }
+
+
+}
